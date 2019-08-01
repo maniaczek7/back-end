@@ -1,5 +1,0 @@
-com\javasampleapproach\springrest\mongodb\repo\CustomerRepository.class
-com\javasampleapproach\springrest\mongodb\config\SwaggerConfig.class
-com\javasampleapproach\springrest\mongodb\controller\CustomerController.class
-com\javasampleapproach\springrest\mongodb\model\Customer.class
-com\javasampleapproach\springrest\mongodb\SpringRestMongoDbApplication.class
