@@ -1,21 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
+    }
+}
+
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
-group = 'eu.rmichniewski'
-version = '0.0.1-SNAPSHOT'
-
-description = "back_end-customers"
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-tasks.withType(JavaCompile) {
-	options.encoding = 'UTF-8'
+bootJar {
+    baseName = 'app'
+    version =  '0.0.1'
 }
 
 repositories {
-     maven { url "http://repo.maven.apache.org/maven2" }
+    mavenCentral()
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version:'2.0.3.RELEASE'
