@@ -39,7 +39,7 @@ public class CustomerController {
 	private CustomerRepository repository;
 
 	@Autowired
-	InvoiceRepository invoiceRepository;
+	private InvoiceRepository invoiceRepository;
 
 	@CrossOrigin(origins = "*")
 	@GetMapping("")
